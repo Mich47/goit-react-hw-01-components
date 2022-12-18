@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 // import { App } from 'components/App';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
-import './index.css';
+// import './index.css';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 import user from './assets/user.json';
@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics />
+      {/* <Statistics /> */}
     </ThemeProvider>
   </React.StrictMode>
 );

@@ -11,7 +11,7 @@ export const theme = {
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
-    body: 'system-ui, sans-serif',
+    body: 'Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
     heading: 'system-ui, sans-serif',
     monospace: 'Menlo, monospace',
   },
@@ -38,5 +38,10 @@ export const theme = {
     none: '0',
     normal: '4px',
     round: '50%',
+  },
+  sizes: {
+    wide: 2048,
+    container: 256,
+    narrow: 512,
   },
 };

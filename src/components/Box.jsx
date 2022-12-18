@@ -8,9 +8,11 @@ import {
   background,
   border,
   position,
+  typography,
 } from 'styled-system';
 
 export const Box = styled('div')(
+  { gap: props => props.gap || '8px' },
   color,
   space,
   layout,
@@ -18,5 +20,6 @@ export const Box = styled('div')(
   grid,
   background,
   border,
-  position
+  position,
+  typography
 );
