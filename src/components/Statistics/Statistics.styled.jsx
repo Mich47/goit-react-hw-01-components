@@ -1,18 +1,19 @@
 import { theme } from '../../theme';
 import styled from 'styled-components';
-import { color, space, typography } from 'styled-system';
+import { color, typography } from 'styled-system';
 
 export const StatTitle = styled.h2`
-  font-size: ${theme.fontSizes.s};
+  font-size: ${theme.fontSizes.m};
   color: ${theme.colors.gray};
-  ${color}
-  ${typography}
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: ${theme.space[4]}px;
+  margin-bottom: ${theme.space[4]}px;
 `;
 
 export const StatText = styled.span`
   font-size: ${theme.fontSizes.s};
-  color: ${theme.colors.gray};
-  ${color}
+  color: ${theme.colors.white};
   ${typography}
 `;
 export const StatList = styled.ul`
@@ -27,9 +28,11 @@ export const StatItem = styled.li`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  flex-basis: 33.33%;
-  padding: 24px 0;
-  background-color: #f3f6f9;
-  border-top: 1px solid #e4e9f0;
-  border-left: 1px solid #e4e9f0;
+  flex-basis: 100%;
+  padding: 16px 0;
+
+  border-top: ${theme.borders.normal};
+  border-left: ${theme.borders.normal};
+  border-color: ${theme.colors.border};
+  ${color}
 `;

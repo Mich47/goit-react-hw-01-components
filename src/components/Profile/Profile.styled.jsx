@@ -28,13 +28,14 @@ export const StatsItem = styled.li`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  flex-basis: 33.33%;
-  padding: 24px 0;
-  background-color: #f3f6f9;
-  border-top: 1px solid #e4e9f0;
-  border-left: 1px solid #e4e9f0;
+  flex-basis: 100%;
+  padding: 20px 0;
+  background-color: ${theme.colors.muted};
+  border-top: ${theme.borders.normal};
+  border-left: ${theme.borders.normal};
+  border-color: ${theme.colors.border};
 `;
-export const StyledAvatar = styled.img`
+export const Avatar = styled.img`
   border-radius: ${theme.radii.round};
   width: 50%;
   margin-bottom: 24px;
