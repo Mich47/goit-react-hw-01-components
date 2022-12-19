@@ -7,6 +7,7 @@ import { theme } from './theme';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 import user from './assets/user.json';
+import data from './assets/data.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,7 +20,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         avatar={user.avatar}
         stats={user.stats}
       />
-      {/* <Statistics /> */}
+      <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
     </ThemeProvider>
   </React.StrictMode>
 );
