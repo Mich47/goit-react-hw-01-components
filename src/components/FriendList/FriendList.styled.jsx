@@ -25,19 +25,17 @@ export const FriendListStyled = styled.ul`
   padding: 0;
   list-style: none;
   display: flex;
+  gap: 8px;
   flex-direction: column;
-  border-right: ${theme.borders.normal};
-  border-bottom: ${theme.borders.normal};
-  border-color: ${theme.colors.border};
-  border-radius: ${theme.radii.normal};
 `;
 export const FriendItem = styled.li`
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 8px;
-  border-top: ${theme.borders.normal};
-  border-left: ${theme.borders.normal};
+  border: ${theme.borders.normal};
   border-color: ${theme.colors.border};
+  border-radius: ${theme.radii.normal};
+  box-shadow: ${theme.shadows.main};
   ${color}
 `;

@@ -12,6 +12,7 @@ export const Statistics = ({ title, stats }) => {
       border=" 1px solid"
       borderColor="border"
       borderRadius="normal"
+      boxShadow="main"
       as="section"
     >
       {title && <StatTitle>{title}</StatTitle>}

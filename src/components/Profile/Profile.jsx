@@ -24,6 +24,7 @@ export const Profile = ({
       border=" 1px solid"
       borderColor="border"
       borderRadius="normal"
+      boxShadow="main"
     >
       <Box display="flex" alignItems="center" flexDirection="column" p={5}>
         <Avatar src={avatar} alt="User avatar" />

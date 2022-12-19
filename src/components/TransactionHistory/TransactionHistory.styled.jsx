@@ -39,6 +39,6 @@ export const Table = styled.table`
   margin: 20px auto;
   padding: 0;
   border-collapse: collapse;
-
+  box-shadow: ${theme.shadows.main};
   border-radius: ${theme.radii.normal};
 `;
