@@ -9,8 +9,9 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       width="container"
       m="0 auto"
       bg="white"
-      border=" 1px solid #e4e9f0"
-      borderRadius="4px"
+      border=" 1px solid"
+      borderColor="border"
+      borderRadius="normal"
     >
       <Description
         avatar={avatar}

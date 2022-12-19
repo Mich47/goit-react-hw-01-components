@@ -1,36 +1,33 @@
+import PropTypes from 'prop-types';
 import { StatsText, StatsList, StatsItem } from './Profile.styled';
 
 export const Stats = ({ stats: { followers, views, likes } }) => {
-  // console.log('stats ', stats);
   return (
-    // class="stats"
     <StatsList>
       <StatsItem>
-        {/* class="label" */}
-        <StatsText fontSize="s" color="#768696">
-          Followers
-        </StatsText>
-        {/* class="quantity" */}
-        <StatsText fontSize="m" fontWeight="bold">
+        <StatsText>Followers</StatsText>
+        <StatsText fontSize="m" fontWeight="bold" color="black">
           {followers}
         </StatsText>
       </StatsItem>
       <StatsItem>
-        <StatsText fontSize="s" color="#768696">
-          Views
-        </StatsText>
-        <StatsText fontSize="m" fontWeight="bold">
+        <StatsText>Views</StatsText>
+        <StatsText fontSize="m" fontWeight="bold" color="black">
           {views}
         </StatsText>
       </StatsItem>
       <StatsItem>
-        <StatsText fontSize="s" color="#768696">
-          Likes
-        </StatsText>
-        <StatsText fontSize="m" fontWeight="bold">
+        <StatsText>Likes</StatsText>
+        <StatsText fontSize="m" fontWeight="bold" color="black">
           {likes}
         </StatsText>
       </StatsItem>
     </StatsList>
   );
 };
+
+// Stats.propTypes = {
+//   imgUrl: PropTypes.string,
+//   name: PropTypes.string.isRequired,
+//   price: PropTypes.number.isRequired,
+// };

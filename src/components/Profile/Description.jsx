@@ -9,11 +9,8 @@ export const Description = ({ username, tag, location, avatar }) => {
       <Text color="black" fontSize="m" fontWeight="bold">
         {username}
       </Text>
-      {/* class="name"*/}
       <Text>@{tag}</Text>
-      {/*class="tag" */}
       <Text>{location}</Text>
-      {/* class="location" */}
     </Box>
   );
 };

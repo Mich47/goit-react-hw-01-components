@@ -1,26 +1,18 @@
 import { theme } from '../../theme';
 import styled from 'styled-components';
-import {
-  color,
-  space,
-  layout,
-  flexbox,
-  grid,
-  background,
-  border,
-  position,
-  typography,
-} from 'styled-system';
+import { color, space, typography } from 'styled-system';
 
 export const Text = styled.p`
+  margin: 0;
+  font-size: ${theme.fontSizes.s};
+  color: ${theme.colors.gray};
   ${space}
   ${color}
   ${typography}
-  margin: 0;
-  font-size: ${theme.fontSizes.s};
-  color: #768696;
 `;
 export const StatsText = styled.span`
+  font-size: ${theme.fontSizes.s};
+  color: ${theme.colors.gray};
   ${color}
   ${typography}
 `;
@@ -43,8 +35,8 @@ export const StatsItem = styled.li`
   border-left: 1px solid #e4e9f0;
 `;
 export const StyledAvatar = styled.img`
-  ${space}
-  border-radius: 50%;
+  border-radius: ${theme.radii.round};
   width: 50%;
   margin-bottom: 24px;
+  ${space}
 `;
