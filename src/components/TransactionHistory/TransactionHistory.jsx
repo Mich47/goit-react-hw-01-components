@@ -1,4 +1,3 @@
-import { theme } from '../../theme';
 import PropTypes from 'prop-types';
 import {
   Table,
@@ -13,7 +12,7 @@ export const TransactionHistory = ({ items }) => {
   return (
     <Table>
       <TableHead>
-        <TableRow>
+        <TableRow bg="backgroundTableHead">
           <TableHeader>Type</TableHeader>
           <TableHeader>Amount</TableHeader>
           <TableHeader>Currency</TableHeader>
@@ -22,10 +21,8 @@ export const TransactionHistory = ({ items }) => {
 
       <TableBody>
         {items.map(({ id, type, amount, currency }, idx) => {
-          const bgColor =
-            idx % 2 ? theme.colors.backgroundTable : theme.colors.white;
           return (
-            <TableRow key={id} bg={bgColor}>
+            <TableRow key={id} idx={idx}>
               <TableData>{type}</TableData>
               <TableData>{amount}</TableData>
               <TableData>{currency}</TableData>

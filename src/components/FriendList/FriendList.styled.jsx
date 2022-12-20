@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { color } from 'styled-system';
 
 export const FriendName = styled.p`
   font-size: ${p => p.theme.fontSizes.m};
@@ -9,7 +8,8 @@ export const FriendStatus = styled.span`
   border-radius: ${p => p.theme.radii.round};
   width: 16px;
   height: 16px;
-  ${color}
+  background-color: ${p =>
+    p.isOnline ? p.theme.colors.green : p.theme.colors.gray};
 `;
 
 export const FriendAvatar = styled.img`
@@ -36,5 +36,4 @@ export const FriendItem = styled.li`
   border-color: ${p => p.theme.colors.border};
   border-radius: ${p => p.theme.radii.normal};
   box-shadow: ${p => p.theme.shadows.main};
-  ${color}
 `;

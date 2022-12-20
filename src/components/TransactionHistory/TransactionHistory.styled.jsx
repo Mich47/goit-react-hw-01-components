@@ -16,6 +16,8 @@ export const TableBody = styled.tbody`
 `;
 
 export const TableRow = styled.tr`
+  background-color: ${p =>
+    p.idx % 2 ? p.theme.colors.backgroundTable : p.theme.colors.white};
   ${color}
 `;
 
