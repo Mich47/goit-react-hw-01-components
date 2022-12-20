@@ -1,19 +1,18 @@
-import { theme } from '../../theme';
 import styled from 'styled-components';
 import { color, typography } from 'styled-system';
 
 export const StatTitle = styled.h2`
-  font-size: ${theme.fontSizes.m};
-  color: ${theme.colors.gray};
+  font-size: ${p => p.theme.fontSizes.m};
+  color: ${p => p.theme.colors.gray};
   text-transform: uppercase;
   text-align: center;
-  margin-top: ${theme.space[4]}px;
-  margin-bottom: ${theme.space[4]}px;
+  margin-top: ${p => p.theme.space[4]}px;
+  margin-bottom: ${p => p.theme.space[4]}px;
 `;
 
 export const StatText = styled.span`
-  font-size: ${theme.fontSizes.s};
-  color: ${theme.colors.white};
+  font-size: ${p => p.theme.fontSizes.s};
+  color: ${p => p.theme.colors.white};
   ${typography}
 `;
 export const StatList = styled.ul`
@@ -31,8 +30,8 @@ export const StatItem = styled.li`
   flex-basis: 100%;
   padding: 16px 0;
 
-  border-top: ${theme.borders.normal};
-  border-left: ${theme.borders.normal};
-  border-color: ${theme.colors.border};
+  border-top: ${p => p.theme.borders.normal};
+  border-left: ${p => p.theme.borders.normal};
+  border-color: ${p => p.theme.colors.border};
   ${color}
 `;

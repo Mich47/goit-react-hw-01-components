@@ -1,18 +1,17 @@
-import { theme } from '../../theme';
 import styled from 'styled-components';
 import { color, space, typography } from 'styled-system';
 
 export const Text = styled.p`
   margin: 0;
-  font-size: ${theme.fontSizes.s};
-  color: ${theme.colors.gray};
+  font-size: ${p => p.theme.fontSizes.s};
+  color: ${p => p.theme.colors.gray};
   ${space}
   ${color}
   ${typography}
 `;
 export const StatsText = styled.span`
-  font-size: ${theme.fontSizes.s};
-  color: ${theme.colors.gray};
+  font-size: ${p => p.theme.fontSizes.s};
+  color: ${p => p.theme.colors.gray};
   ${color}
   ${typography}
 `;
@@ -30,13 +29,13 @@ export const StatsItem = styled.li`
   gap: 8px;
   flex-basis: 100%;
   padding: 20px 0;
-  background-color: ${theme.colors.muted};
-  border-top: ${theme.borders.normal};
-  border-left: ${theme.borders.normal};
-  border-color: ${theme.colors.border};
+  background-color: ${p => p.theme.colors.muted};
+  border-top: ${p => p.theme.borders.normal};
+  border-left: ${p => p.theme.borders.normal};
+  border-color: ${p => p.theme.colors.border};
 `;
 export const Avatar = styled.img`
-  border-radius: ${theme.radii.round};
+  border-radius: ${p => p.theme.radii.round};
   width: 50%;
   margin-bottom: 24px;
   ${space}

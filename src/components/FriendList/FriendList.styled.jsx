@@ -1,26 +1,25 @@
-import { theme } from '../../theme';
 import styled from 'styled-components';
 import { color } from 'styled-system';
 
 export const FriendName = styled.p`
-  font-size: ${theme.fontSizes.m};
+  font-size: ${p => p.theme.fontSizes.m};
 `;
 
 export const FriendStatus = styled.span`
-  border-radius: ${theme.radii.round};
+  border-radius: ${p => p.theme.radii.round};
   width: 16px;
   height: 16px;
   ${color}
 `;
 
 export const FriendAvatar = styled.img`
-  border-radius: ${theme.radii.normal};
+  border-radius: ${p => p.theme.radii.normal};
   width: 64px;
 `;
 
 export const FriendListStyled = styled.ul`
-  font-family: ${theme.fonts.body};
-  width: ${theme.sizes.container}px;
+  font-family: ${p => p.theme.fonts.body};
+  width: ${p => p.theme.sizes.container}px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -33,9 +32,9 @@ export const FriendItem = styled.li`
   align-items: center;
   gap: 16px;
   padding: 8px;
-  border: ${theme.borders.normal};
-  border-color: ${theme.colors.border};
-  border-radius: ${theme.radii.normal};
-  box-shadow: ${theme.shadows.main};
+  border: ${p => p.theme.borders.normal};
+  border-color: ${p => p.theme.colors.border};
+  border-radius: ${p => p.theme.radii.normal};
+  box-shadow: ${p => p.theme.shadows.main};
   ${color}
 `;
